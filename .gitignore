@@ -1,21 +1,13 @@
-# Ignore all files and folders by default
-*
-
-# Allow the README, git configuration files, and the release folder
-!README.md
-!.gitignore
-!.gitattributes
-!release/
-
-# Explicitly allow only the packaged executables inside release
-!release/ARLAK-Portable-1.0.0.exe
-!release/ARLAK-Setup-1.0.0.exe
-
-# Ignore the build cache and unpacked folders inside release
-release/win-unpacked/
-release/win-unpacked.tmp/
-release/.icon-ico/
-release/builder-debug.yml
-release/builder-effective-config.yaml
-release/*.blockmap
-release/*.7z
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+release/
+agent_build/
+agent_dist/
+__pycache__/
+*.spec
